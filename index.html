@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Le Chu Long Nhat</title>
+
+    <link rel="stylesheet" href="./asset/css/font_face.css">
+    <link rel="stylesheet" href="./asset/libraries/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./asset/libraries/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/libraries/sal-master/sal-master/dist/sal.css">
+    <link rel="stylesheet" href="./asset/css/normalize.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/css/animation.css">
+
+</head>
+
+<body>
+    <div id="popup" style="display:none;">
+        <button id="closeButton">X</button>
+        <h3>Attention</h3>
+        <p>I'm trying to perfect, not done yet</p>
+    </div>
+
+    <nav class="home-menu">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="avt-cv d-block">
+                <img src="./asset/img/anh cv.png" alt="avt-nhat">
+            </a>
+            <ul class="menu-lits d-flex">
+                <li>
+                    <a href="#">Introduce yourself</a>
+                </li>
+                <li>
+                    <a href="#">Personal skills</a>
+                </li>
+            </ul>
+            <ul class="menu-lits-social-network d-flex">
+                <li>
+                    <a href="https://github.com/longnhat2kk">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/longnhatit/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/longnhat.it">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lechulongnhat/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="btn-darkmode">
+        <input type="checkbox" name="checkbox" class="switch">
+    </div>
+    <section class="w-banner-home position-relative">
+        <video src="./asset/img/video/banner-video.mp4" autoplay muted loop></video>
+        <div class="heading position-absolute">
+            <h1 class="title">My CV</h1>
+            <p class="sub-title">
+                This is a website to introduce myself and my accumulated skills during the past time
+            </p>
+        </div>
+    </section>
+
+    <section class="w-introduce py-5">
+        <div class="container">
+            <div class="my-introduce">
+                <div class="heading text-center">
+                    <h2 class="title">Introduce yourself</h2>
+                    <p class="sub-title">Some background information about me</p>
+                </div>
+                <div class="content d-flex">
+                    <div class="content-left img-wrap">
+                        <img src="./asset/img/anh cv.png" alt="">
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-heading">
+                            <h3 class="my-name">Le Chu Long Nhat</h3>
+                            <p class="my-sub-name">Web Developer</p>
+                        </div>
+                        <div class="contact-information">
+                            <h5>Contact Information</h5>
+                            <ul class="contact-information-list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar2-heart" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3Zm2 .5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H3Zm5 4.493c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                                    </svg>
+                                    02/02/2000
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                    </svg>
+                                    Nam
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-phone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                    </svg>
+                                    <a href=”tel:0366902873>036 6902 873</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-house-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z" />
+                                        <path
+                                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                                    </svg>
+                                    <a href="#">Hoa Minh, Lien Chieu, Da Nang</a>
+
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                                        <path
+                                            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                                    </svg>
+                                    <a href="mailto:longnhat.it.dev@gmail.com">longnhat.it.dev@gmail.com</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                    </svg>
+                                    <a href="#">Linkedin</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                    <a href="#">Github</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-career-goals py-5" style="background-image: url('./asset/img/baner2.jpg');">
+        <div class="container">
+            <h2 class="title text-center">Career goals</h2>
+            <ul class="career-goals-list">
+                <li>
+                    <h5>Short-term goal</h5>
+                    <p>
+                        I would like to work in a professional programming environment where I can develop and gain more
+                        knowledge from there to improve my skills to successfully complete the assigned work.
+                    </p>
+                </li>
+                <li>
+                    <h5>Long-term goals</h5>
+                    <p>
+                        Accumulate a lot of work experience, improve skills
+                        programming skills, learn and learn more about other languages. Are from
+                        that advances at work within the next 2 years and contributes
+                        part of the strength in the development of the company
+                    </p>
+                    <p>
+                        In the future I will switch to full stack devoloper
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="w-education py-5">
+        <div class="container">
+            <h2 class="title text-center">Education</h2>
+            <div class="education-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5 class="content-title">BTEC FPT British College</h5>
+                        <h6>Major In InformationTechnology</h6>
+                        <span>2018 - 2021</span>
+                        <strong>Graduated</strong>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="content-title">Subjects In School</h5>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-experience py-5" style="background-image: url('./asset/img/BGE\ \(2\).png');">
+        <div class="container">
+            <div class="first-company">
+                <h2 class="title text-center">Expenience</h2>
+                <h5 class="title-company">First company</h5>
+                <div class="experience-content">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="experience-content-items">
+                                <h5 class="name-company">WEABLE CO.,LTD</h5>
+                                <span>Aug 2022 - February 2023</span>
+                                <p>Front-end Developer</p>
+                            </div>
+                            <div class="experience-content-items mt-4">
+                                <h5>Participating Projects</h5>
+                                <div class="project-text">
+                                    <span>20 +</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="experience-content-items">
+                                <h5>Technologies</h5>
+                                <ul class="experience-lists">
+                                    <li>
+                                        <img src="./asset/img/icons/WordPress.icon.png" alt="">
+                                        Wordpress
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/Bootstrap_logo..png" alt="">
+                                        Bootstrap
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/html-css-icon.png" alt="">
+                                        Html/Css
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/javascript_logo.png" alt="">
+                                        JavaScript
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/jquery.png" alt="">
+                                        Jquery
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/fancyapps.png" alt="">
+                                        Fancyapps
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/slick-logo.png" alt="">
+                                        Slick slider (kenwheeler.github.io/slick/)
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/Figma-logo.svg" alt="">
+                                        Figma
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/Slack_icon.png" alt="">
+                                        Slack
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/trello icon.png" alt="">
+                                        Trello
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/github icon.png" alt="">
+                                        Github
+                                    </li>
+                                    <li>
+                                        <img src="./asset/img/icons/WinSCP_Logo.png" alt="">
+                                        Winscp
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="experience-content-items">
+                                <h5>Team members</h5>
+                                <div class="slick-members">
+                                    <div class="member-item d-flex flex-column align-items-center">
+                                        <div class="img-avt-member">
+                                            <div class="img-wrap">
+                                                <img src="./asset/img/sep lam.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <h5>Trương Công Lâm</h5>
+                                            <p>CEO & Co-founder</p>
+                                            <ul
+                                                class="list-information d-flex align-items-center justify-content-center">
+                                                <li>
+                                                    <a href="https://www.facebook.com/lamtc.dev">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <!-- <li><i class="bi bi-instagram"></i></li> -->
+                                                <li>
+                                                    <a href="https://www.linkedin.com/in/lamtc/">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-item d-flex flex-column align-items-center">
+                                        <div class="img-avt-member">
+                                            <div class="img-wrap">
+                                                <img src="./asset/img/duc.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <h5>Phạm Nguyễn Minh Đức</h5>
+                                            <p>Developer</p>
+                                            <ul
+                                                class="list-information d-flex align-items-center justify-content-center">
+                                                <li>
+                                                    <a href="https://www.facebook.com/phamnguyenminhduck">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <!-- <li><i class="bi bi-instagram"></i></li> -->
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-item d-flex flex-column align-items-center">
+                                        <div class="img-avt-member">
+                                            <div class="img-wrap">
+                                                <img src="./asset/img/tram.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <h5>Phạm Trâm</h5>
+                                            <p>Developer</p>
+                                            <ul
+                                                class="list-information d-flex align-items-center justify-content-center">
+                                                <li>
+                                                    <a href="https://www.facebook.com/pBiChTrAm.pb">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <!-- <li><i class="bi bi-instagram"></i></li> -->
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-item d-flex flex-column align-items-center">
+                                        <div class="img-avt-member">
+                                            <div class="img-wrap">
+                                                <img src="./asset/img/hai.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <h5>Đỗ Hải</h5>
+                                            <p>Developer</p>
+                                            <ul
+                                                class="list-information d-flex align-items-center justify-content-center">
+                                                <li>
+                                                    <a href="https://www.facebook.com/profile.php?id=100048835398543">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <!-- <li><i class="bi bi-instagram"></i></li> -->
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-item d-flex flex-column align-items-center">
+                                        <div class="img-avt-member">
+                                            <div class="img-wrap">
+                                                <img src="./asset/img/hoang.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <h5>Minh Hoàng</h5>
+                                            <p>Developer</p>
+                                            <ul
+                                                class="list-information d-flex align-items-center justify-content-center">
+                                                <li>
+                                                    <a href="https://www.facebook.com/letuminh.hoang">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <!-- <li><i class="bi bi-instagram"></i></li> -->
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-item d-flex flex-column align-items-center">
+                                        <div class="img-avt-member">
+                                            <div class="img-wrap">
+                                                <img src="./asset/img/van.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <h5>Trương Vân</h5>
+                                            <p>CEO & Co-founder</p>
+                                            <ul
+                                                class="list-information d-flex align-items-center justify-content-center">
+                                                <li>
+                                                    <a href="https://www.facebook.com/profile.php?id=100008465952610">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <!-- <li><i class="bi bi-instagram"></i></li> -->
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-item d-flex flex-column align-items-center">
+                                        <div class="img-avt-member">
+                                            <div class="img-wrap">
+                                                <img src="./asset/img/tu-dua.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <h5>Tú</h5>
+                                            <p>Design</p>
+                                            <ul
+                                                class="list-information d-flex align-items-center justify-content-center">
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <!-- <li><i class="bi bi-instagram"></i></li> -->
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="#00000" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="company">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="experience-content-items">
+                                <h5>Address</h5>
+                                <div class="map-copany mt-4">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1410261688757!2d108.19334471422319!3d16.0061725453778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421bbe9f3c5485%3A0xc5687524816a763c!2zQ8OUTkcgVFkgVE5ISCBHSeG6okkgUEjDgVAgQ8OUTkcgTkdI4buGIFdFQUJMRQ!5e0!3m2!1svi!2s!4v1672397784833!5m2!1svi!2s"
+                                        width="100%" height="360" style="border:1px solid; border-radius: 10px;"
+                                        allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div
+                                    class="link-copany d-flex flex-column align-items-center justify-content-center mt-5">
+                                    <a href="https://weable.vn/about/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00000"
+                                            class="bi bi-globe2" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                                        </svg>
+                                        Weable.vn
+                                    </a>
+                                    <a href="https://www.facebook.com/weable.vn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00000"
+                                            class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                            </path>
+                                        </svg>
+                                        Facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="2nd-company mt-5">
+                <h3 class="mb-4">2nd company</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="progress-company">
+                            <h5>Công Ty TNHH MTV JWS Việt Nam</h5>
+                            <p>I apprenticed for 2 months</p>
+                            <p>Build website with wordpress theme</p>
+                            <ul>
+                                <li>widgets wordpress method</li>
+                                <li>Custom post type</li>
+                                <li>Create theme option</li>
+                                <li>ect...</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="experience-content-items">
+                            <h5>Address</h5>
+                            <div class="map-copany mt-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30672.226336815278!2d108.12132045974865!3d16.064021584553497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142196aa915db11%3A0x75670190684f23d4!2sC%C3%B4ng%20Ty%20TNHH%20MTV%20JWS%20Vi%E1%BB%87t%20Nam!5e0!3m2!1svi!2s!4v1683817535690!5m2!1svi!2s"
+                                    width="600" height="450" style="border:1px solid; border-radius: 10px;"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="link-copany d-flex flex-column justify-content-center mt-5">
+                                <a href="http://jwsuperthemes.com/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00000"
+                                        class="bi bi-globe2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                                    </svg>
+                                    Weable.vn
+                                </a>
+                                <a href="tel:0915994702">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    091 5994 702
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-skills py-5">
+        <div class="container">
+            <h2 class="title text-center">My Skills</h2>
+            <div class="skills-content">
+                <div class="tabs">
+                    <ul id="tabs-nav">
+                        <li><a href="#tab1">Technical skills</a></li>
+                        <li><a href="#tab2">Non-Technical skill</a></li>
+                    </ul>
+                    <div id="tabs-content">
+                        <div id="tab1" class="tab-content">
+                            <ul class="tab-list">
+                                <li>Html CSS, Bootstrap</li>
+                                <li>JavaScript, Jquery (basic)</li>
+                                <li>MySQL (basic)</li>
+                                <li>Git (basic)</li>
+                            </ul>
+                        </div>
+                        <div id="tab2" class="tab-content">
+                            <ul class="tab-list">
+                                <li>Time management</li>
+                                <li>Teamwork</li>
+                                <li>Self-study</li>
+                                <li>Google search</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./asset/libraries/jquery-3.6.1.min.js"></script>
+    <script src="./asset/libraries/jquery.easing.min.js"></script>
+    <script src="./asset/js/popper.js"></script>
+    <script src="./asset/libraries/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <script src="./asset/libraries/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./asset/libraries/sal-master/sal-master/dist/sal.js"></script>
+    <script src="./asset/libraries/jquery.countdown.js"></script>
+    <script src="./jquery.js"></script>
+</body>
+
+</html>
