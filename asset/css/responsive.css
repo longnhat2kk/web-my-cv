@@ -1,11 +1,124 @@
+:root {
+    --color-text-white: #FFFF;
+    --color-text-black: #000;
+    --bg-white: #FFFF;
+}
+
 /* PC */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .home-menu-mobile {
+        display: none;
+    }
+}
 
 /* Mobile - Tablet */
-@media (max-width: 1023px) {}
+@media (max-width: 1023px) {
+    .home-menu {
+        display: none;
+    }
+
+    .home-menu-mobile {
+        padding: .5rem;
+    }
+
+    .home-menu-mobile .menu-lits-social-network {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .home-menu-mobile .menu-lits-social-network li:not(:first-child) {
+        margin-left: .5rem;
+    }
+
+    .home-menu-mobile .menu-lits-social-network li svg {
+        color: var(--color-text-black);
+        font-size: 1rem;
+    }
+
+    .home-menu-mobile .menu-left-single {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 50%;
+        background-color: var(--bg-white);
+        transform: translateX(-100%);
+        z-index: 99999999;
+        transition: all .5s;
+    }
+
+    .home-menu-mobile .menu-left-single.show {
+        transform: translateX(0);
+    }
+
+    .home-menu-mobile .menu-left-single ul {
+        list-style: none;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .home-menu-mobile .menu-left-single ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #6b6b6b3b;
+    }
+
+    .home-menu-mobile .menu-left-single ul li:not(:first-child) {
+        margin-top: 0;
+    }
+
+    .home-menu-mobile .menu-left-single ul li a {
+        font-size: 1rem;
+        color: var(--color-text-black);
+        text-decoration: none;
+    }
+
+    .home-menu-mobile .menu-left-single .close {
+        padding: 1rem;
+    }
+
+    .home-menu-mobile .menu-left {
+        font-size: 1.5rem;
+        color: var(--color-text-black);
+    }
+
+    .home-menu-mobile .bg-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        z-index: 999999;
+        opacity: .6;
+        display: none;
+    }
+}
 
 /* Tablet */
 @media (min-width:740px) and (max-width: 1023px) {}
 
 /* Mobile */
-@media (max-width:739px) {}
+@media (max-width:739px) {
+    .w-banner-home .heading {
+        width: 100%;
+        top: 30%;
+    }
+
+    .w-banner-home .heading .title {
+        font-size: 3rem;
+        line-height: 8rem;
+    }
+
+    .w-banner-home {
+        height: 70vh;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .w-introduce .heading .title::after {
+        width: 40%;
+    }
+}

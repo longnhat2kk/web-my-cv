@@ -65,23 +65,23 @@ a {
 }
 
 /* css darkmode */
-body.dark {}
-
 .dark {
-    --color-red: #ffffff;
-    --color-black: #14141496;
-    --color-bg: #141414;
-    --color-white: #CCCCCC;
-    --color-text-white: #FFFF;
-    --color-orange: #ffffff;
-    --color-light-orange: #ffffff;
-    --color-yellow: #FFFF00;
-    --color-blue: #ffffff;
-    --color-light-blue: #ffffff;
-    --color-link: #ffffff;
-    --color-text-black: #ffffff;
-    --color-black-light: #1d1d1d;
+    --color-red: #ffffff !important;
+    --color-black: #14141496 !important;
+    --color-bg: #141414 !important;
+    --color-white: #CCCCCC !important;
+    --color-text-white: #FFFF !important;
+    --color-orange: #ffffff !important;
+    --color-light-orange: #ffffff !important;
+    --color-yellow: #FFFF00 !important;
+    --color-blue: #ffffff !important;
+    --color-light-blue: #ffffff !important;
+    --color-link: #ffffff !important;
+    --color-text-black: #ffffff !important;
+    --color-black-light: #1d1d1d !important;
 }
+
+
 
 nav.scroll-menu .avt-cv {
     width: 60px;
@@ -393,6 +393,15 @@ nav.scroll-menu {
     background-color: var(--color-bg);
 }
 
+.w-education .title,
+.w-education .education-content h6,
+.w-education .education-content span,
+.w-education .education-content strong,
+.w-education .education-content ul li,
+.w-education .education-content .content-title {
+    color: var(--color-text-black);
+}
+
 /* ******************************************** */
 /* w-experience */
 .w-experience {
@@ -477,6 +486,11 @@ nav.scroll-menu {
     font-weight: 600;
     position: relative;
     transition: all .5s ease-in-out;
+    display: inline-block;
+}
+
+.w-experience .experience-content-items .link-copany a:first-child {
+    margin-right: 1rem;
 }
 
 .w-experience .experience-content-items .link-copany a::after {
@@ -485,13 +499,13 @@ nav.scroll-menu {
     width: 0;
     height: 2px;
     background-color: var(--color-link);
-    left: 0;
+    right: 0;
     top: calc(100% + 2px);
     transition: all .5s ease-in-out;
 }
 
 .w-experience .experience-content-items .link-copany a:hover:after {
-    width: 100%;
+    width: 70%;
 }
 
 .w-experience .experience-content-items .link-copany a svg {
@@ -545,8 +559,9 @@ nav.scroll-menu {
 }
 
 .w-experience .slick-members .slide-arrow svg {
-    width: 30px;
-    height: 30px;
+    width: 1em;
+    height: 1em;
+    font-size: 1.5rem;
     fill: white;
     border-radius: 100%;
 }
@@ -703,6 +718,159 @@ nav.scroll-menu {
     transform: translateX(8px);
 }
 
+/* w-web-demo */
+.w-web-demo {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 0;
+}
+
+.w-web-demo::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.w-web-demo .title {
+    color: var(--color-text-white);
+    margin-bottom: 1rem;
+}
+
+.w-web-demo .slider-web-demo .slider-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.w-web-demo .slider-web-demo .slider-items .img-web img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.w-web-demo .slider-web-demo .slider-items .link-go-to-web {
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-text-white);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    position: relative;
+    display: inline-flex;
+
+    -webkit-animation: text-flash 3000ms infinite;
+    -moz-animation: text-flash 3000ms infinite;
+    -o-animation: text-flash 3000ms infinite;
+    animation: text-flash 3000ms infinite;
+}
+
+.w-web-demo .slider-web-demo .slider-items .link-go-to-web::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.w-web-demo .slider-web-demo .slider-items .link-go-to-web .icon-link-right {
+    -webkit-transition: transform 0.3s linear;
+    -o-transition: transform 0.3s linear;
+    -ms-transition: transform 0.3s linear;
+    -moz-transition: transform 0.3s linear;
+    transition: transform 0.3s linear;
+    margin-left: 8px;
+}
+
+.w-web-demo .slider-web-demo .slider-items .link-go-to-web:hover {
+    animation-play-state: paused;
+}
+
+.w-web-demo .slider-web-demo .slider-items .link-go-to-web:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.w-web-demo .slider-web-demo .slider-items .link-go-to-web:hover .icon-link-right {
+    animation: bounceAlpha 1s both;
+    -webkit-animation: bounceAlpha 1s both
+}
+
+.w-web-demo .slider-web-demo .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.w-web-demo .slider-web-demo .slick-dots li:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.w-web-demo .slider-web-demo .slick-dots button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid #FAAB78;
+
+    text-indent: -9999px;
+}
+
+.w-web-demo .slider-web-demo .slick-dots li.slick-active button {
+    background-color: #be5c55d9;
+}
+
+.w-web-demo .slider-web-demo .slide-arrow {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    z-index: 999999;
+    border: none;
+    background-color: #bdb8b456;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    transition: all .3s;
+}
+
+.w-web-demo .slider-web-demo .slide-arrow:hover {
+    background-color: #bdb8b4cb;
+}
+
+.w-web-demo .slider-web-demo .slide-arrow svg {
+    font-size: 2.5rem;
+    color: white;
+    width: 1em;
+    height: 1em;
+}
+
+.w-web-demo .slider-web-demo .slide-arrow.prev-arrow {
+    left: -1.5rem;
+}
+
+.w-web-demo .slider-web-demo .slide-arrow.next-arrow {
+    right: -1.5rem;
+}
+
+/*End w-web-demo */
 /* button darkmode */
 .btn-darkmode {
     position: fixed;
@@ -736,7 +904,6 @@ nav.scroll-menu {
     background-size: cover;
     transition: background-image 1s ease-in-out;
 }
-
 
 .btn-darkmode .switch:after {
     content: '';
@@ -810,3 +977,35 @@ nav.scroll-menu {
     top: 10px;
     right: 10px;
 }
+
+/* Back to Top */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 999999999999999;
+
+}
+
+#backToTopBtn i {
+    animation: bounce .4s ease infinite alternate;
+    -webkit-animation: bounce .4s ease infinite alternate;
+}
+
+#backToTopBtn i:hover {
+    animation-play-state: paused;
+}
+
+#backToTopBtn.show {
+    display: block;
+}
+
+/* End Back to Top */

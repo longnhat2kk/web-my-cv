@@ -102,3 +102,65 @@
 }
 
 /*end button darkmode */
+
+/* Animation icon right */
+@keyframes bounceAlpha {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.9);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+/*End Animation icon right */
+/* text nhấp nháy */
+@keyframes text-flash {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* dots slider */
+@keyframes progress {
+    from {
+        stroke-dashoffset: 360;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Back to top */
+@-webkit-keyframes bounce {
+    0% {
+        text-shadow:
+            0 5px 0 #ccc,
+            0 2px 3px rgb(145, 145, 145);
+    }
+
+    100% {
+        transform: translateY(8px);
+        text-shadow: 0 -8px 0 rgba(153, 153, 153, 0.39),
+            0 0px 20px rgba(0, 0, 0, .8);
+    }
+}
