@@ -148,4 +148,16 @@ $(document).ready(function () {
     $(".home-menu-mobile .menu-left-single").removeClass("show");
     $(".home-menu-mobile .bg-mobile").hide(100);
   });
+
+  // cuộn menu mobile
+  window.addEventListener('scroll', function() {
+    var nav = document.querySelector('.home-menu-mobile');
+    var threshold = 100; // Ngưỡng để thực hiện thay đổi màu
+
+    if (window.scrollY > threshold) {
+      nav.classList.add('overlay');
+    } else {
+      nav.classList.remove('overlay');
+    }
+  });
 });
